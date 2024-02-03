@@ -35,11 +35,11 @@ const LocalCopilotSettings: React.FC<LocalCopilotSettingsProps> = ({
         2. Pick LM Studio in the Copilot Chat model selection dropdown to chat with it!
       </p>
       <TextComponent
-        name="LM Studio Server Port"
-        description="Default is 1234."
-        value={lmStudioPort}
-        onChange={setLmStudioPort}
-        placeholder="1234"
+        name="LM Studio Base URL"
+        description="Default is http://localhost:1234."
+        value={lmStudioBaseUrl}
+        onChange={setLmStudioBaseUrl}
+        placeholder="http://localhost:1234"
       />
       <h3>Ollama</h3>
       <p>To use Local Copilot with Ollama, pick Ollama in the Copilot Chat model selection dropdown.</p>
